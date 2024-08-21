@@ -1,0 +1,70 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "year": 1960
+    },
+    {
+      "id": 2,
+      "title": "1984",
+      "author": "George Orwell",
+      "year": 1949
+    },
+    {
+      "id": 3,
+      "title": "Moby Dick",
+      "author": "Herman Melville",
+      "year": 1851
+    },
+    {
+      "id": 4,
+      "title": "Say Goodnight Gracie",
+      "author": "Julie Reece Deaver",
+      "year": 1988
+    },
+    {
+      "id": 5,
+      "title": "The Face on the Milk Carton",
+      "author": "Caroline B. Cooney",
+      "year": 1990
+    },
+    {
+      "id": 6,
+      "title": "The Outsiders",
+      "author": "S.E Hinton",
+      "year": 1967
+    },
+    {
+      "id": 7,
+      "title": "Lord of the Flies",
+      "author": "William Golding",
+      "year": 1954
+    },
+    {
+      "id": 8,
+      "title": "The Secret Garden",
+      "author": "Frances Hodgson Burnett",
+      "year": 1911
+    },
+    {
+      "id": 9,
+      "title": "The War of The Worlds",
+      "author": "H. G. Wells",
+      "year": 1898
+    },
+    {
+      "id": 10,
+      "title": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "year": 1953
+    },
+    {
+      "title": "Say Goodnight Gracie",
+      "author": "Julie Reece Deaver",
+      "year": "1988",
+      "id": 11
+    }
+  ]
+}

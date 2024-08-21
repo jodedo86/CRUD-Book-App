@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Search</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min (3).css"
+    />
+  </head>
+  <body class="container-sm">
+    <img
+      class="img-fluid"
+      src="https://www.trendingtop5.com/wp-content/uploads/2017/08/unnamed.png"
+      alt="A photo of a stack of books"
+      width="300"
+      height="350"
+    />
+    <h3>Book Index</h3>
+
+    <!--form-->
+    <form id="book-form">
+      <div class="form-group">
+        <label for="book-title">Title:</label>
+        <input type="text" id="book-title" class="form-control" required />
+      </div>
+      <div class="form-group">
+        <label for="book-author">Author:</label>
+        <input type="text" id="book-author" class="form-control" required />
+      </div>
+      <div class="form-group">
+        <label for="book-year">Year:</label>
+        <input type="number" id="book-year" class="form-control" required />
+      </div>
+      <br />
+      <button type="submit" class="btn btn-primary">Add Book</button>
+      <button type="button" class="btn btn-primary">Delete</button>
+    </form>
+    <ul id="book-list" class="list-group mt-4"></ul>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
