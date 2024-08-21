@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book Search</title>
+    <title>Book Index</title>
+    <link rel="stylesheet" href="styles.css">
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min (3).css"
@@ -17,29 +18,31 @@
       width="300"
       height="350"
     />
-    <h3>Book Index</h3>
-
+    
     <!--form-->
     <form id="book-form">
-      <div class="form-group">
-        <label for="book-title">Title:</label>
-        <input type="text" id="book-title" class="form-control" required />
-      </div>
-      <div class="form-group">
-        <label for="book-author">Author:</label>
-        <input type="text" id="book-author" class="form-control" required />
-      </div>
-      <div class="form-group">
-        <label for="book-year">Year:</label>
-        <input type="number" id="book-year" class="form-control" required />
-      </div>
-      <br />
-      <button type="submit" class="btn btn-primary">Add Book</button>
-      <button type="button" class="btn btn-primary">Delete</button>
-    </form>
-    <ul id="book-list" class="list-group mt-4"></ul>
+      <div class="container-fluid">
+        <h3>Book Index</h3>
+        <form id="bookForm" class="mt-4">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" required>
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" class="form-control" id="author" required>
+            </div>
+            <div class="form-group">
+              <label for="year">Year</label>
+              <input type="text" class="form-control" id="year" required>
+          </div>
+          <br>
+            <button type="submit" class="btn btn-primary">Add Book</button>
+        </form>
+        <ul id="bookList" class="list-group mt-4"></ul>
+    </div>
+
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
