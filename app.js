@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Add Bootstrap classes to the list item
       li.classList.add("list-group-item");
       // Set the text content of the list item using temperate literals
-      li.textContent = `${book.title} by ${book.author}`;
+      li.textContent = `${book.title} by ${book.author} && ${book.year}`;
 
       // Create a delete button for each book
       const deleteBtn = document.createElement("button");
