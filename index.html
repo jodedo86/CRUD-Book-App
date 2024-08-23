@@ -4,13 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Index</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <!--Used * Bootswatch v5.3.3 (https://bootswatch.com)
+ * Theme: flatly
+ * Copyright 2012-2024 Thomas Park
+ * Licensed under MIT
+ * Based on Bootstrap
+*//*!
+ * Bootstrap  v5.3.3 (https://getbootstrap.com/)
+ * Copyright 2011-2024 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)-->
     <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min (3).css"
+    rel="stylesheet"
+    href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body class="container-sm">
+  <body class="container">
     <img
       class="img-fluid"
       src="https://www.trendingtop5.com/wp-content/uploads/2017/08/unnamed.png"
@@ -20,7 +30,7 @@
     />
     
     <!--form-->
-    <form id="book-form">
+    <form id="book-form" class="form-width">
       <div class="container-fluid">
         <h3>Book Index</h3>
         <form id="bookForm" class="mt-4">
@@ -37,10 +47,10 @@
               <input type="text" class="form-control" id="year" required>
           </div>
           <br>
-            <button type="submit" class="btn btn-primary">Add Book</button>
+            <button type="submit" id="button" class="btn btn-primary">Add Book</button>
         </form>
-        <ul id="bookList" class="list-group mt-4"></ul>
-    </div>    
+      </div>    
+      <ul id="bookList" class="list-group mt-4 list-width"></ul>
     <script src="app.js"></script>
   </body>
 </html>

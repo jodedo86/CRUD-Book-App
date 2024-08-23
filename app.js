@@ -32,11 +32,11 @@ document.addEventListener("DOMContentLoaded", () => {
       // Add Bootstrap classes to the list item
       li.classList.add("list-group-item");
       // Set the text content of the list item using temperate literals
-      li.textContent = `${book.title} by ${book.author} && ${book.year}`;
+      li.textContent = `${book.title} by ${book.author}, ${book.year}`;
 
       // Create a delete button for each book
       const deleteBtn = document.createElement("button");
-      deleteBtn.classList.add("btn", "btn-danger", "btn-sm", "float-right");
+      deleteBtn.classList.add("btn", "btn-danger", "btn-sm", "float-end");
       deleteBtn.textContent = "Delete";
 
       // Add an event listener to handle delete button clicks
@@ -62,12 +62,12 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Error deleting book:", error);
     }
   }
-
+  let button = document.getElementById("button");
   // Handle form submission to add a new book
-  bookForm.addEventListener("submit", async (e) => {
+  button.addEventListener("click", async (e) => {
     // Prevent the form from refreshing the page
     e.preventDefault();
-
+    console.log("YAY!!");
     // Get values from form inputs
     const title = document.getElementById("title").value;
     const author = document.getElementById("author").value;
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ title, author }),
+        body: JSON.stringify({ title, author, year }),
       });
       // Reset the form fields
       bookForm.reset();
